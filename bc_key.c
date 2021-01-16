@@ -495,7 +495,6 @@ void print_usage(char *here)
 int main(int argc, char *argv[])
 {
     ENGINE_load_builtin_engines();
-    CRYPTO_malloc_init();
     if(argc!=3){
         print_usage(argv[0]);
         exit(1);
